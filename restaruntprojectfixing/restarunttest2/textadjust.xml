@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<successMessage>
+	<text>successful logging in...</text>
+	<font>Verdana</font>
+	<fontSize>16</fontSize>
+	<!-- Font size for success message -->
+	<fontColor>Green</fontColor>
+	<!-- Font color for success message -->
+</successMessage>
