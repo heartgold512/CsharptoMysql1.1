@@ -93,8 +93,8 @@ namespace restarunttest2
         public bool Isauthenticated(string username, string password)
         {
             bool isauthenticated = false;
-            string query = "SELECT user_id FROM user WHERE username = @username AND password = @password";
-            string connectiondb = "Server=localhost; Port=3306; Database=restrauntdb2;User=root;Password=Jonathandarth512?;";
+            string query = "SELECT user_id FROM user WHERE username = @username AND password = @password"; //ie your db credentials to serach for
+            string connectiondb = "specify here";
             using (MySqlConnection connection = new MySqlConnection(connectiondb))
             {
                 try
@@ -142,7 +142,7 @@ namespace restarunttest2
 
         private bool VerifyPassword(string enteredPassword, string hashedPasswordFromDb)
         {
-           /// there is no point in this yet
+           /// there is no point in this yet but you can implement reccommend sha256 or argon 2
             return enteredPassword == hashedPasswordFromDb;
         }
 
