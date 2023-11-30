@@ -31,7 +31,7 @@ namespace restarunttest2
         }
         private void InitializeDatabase()
         {
-            string connectiondb = "Server=localhost; Port=3306; Database=restrauntdb2;User=root;Password=Jonathandarth512?;";
+           //conection string here string connectiondb = 
             connection = new MySqlConnection(connectiondb);
            
             //we may need other initialisations
@@ -56,11 +56,11 @@ private void InitializeTextBoxes()
         {
               //add a  clear method to clear5 the input text upon clicking and then add a click off method to readd the original text
 
-            // Your code for handling the TextChanged event of textBox1
+            // code for handling the TextChanged event of textBox1
         }
         private void PasswordBox_TextChanged(object sender, EventArgs e)
         {
-            // Your code for handling the TextChanged event of textBox1
+            //  code for handling the TextChanged event of textBox1
         }
         private int GetNextUserId()
         {
