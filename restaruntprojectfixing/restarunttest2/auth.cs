@@ -16,7 +16,7 @@ namespace restarunttest2
     public partial class auth : Form
     {
         private bool isMaximized = false;
-        MySqlConnection connection = new MySqlConnection("Server=localhost; Port=3306; Database=restrauntdb2;User=root;Password=Jonathandarth512?;");
+     //specify the connection string here  MySqlConnection connection = 
         MySqlCommand command;
         MySqlDataAdapter adapter;
         DataTable dt;
@@ -30,7 +30,7 @@ namespace restarunttest2
         {
             try
             {
-                using (MySqlConnection connection = new MySqlConnection("Server=localhost; Port=3306; Database=restrauntdb2;User=root;Password=Jonathandarth512?;"))
+                using (MySqlConnection connection = new MySqlConnection("specify here again"))
                 {
 
                     connection.Open();
@@ -67,7 +67,7 @@ namespace restarunttest2
 
         private void LoadTableDataIntoDataGridView(string tableName)
         {
-            using (MySqlConnection connection = new MySqlConnection("Server=localhost; Port=3306; Database=restrauntdb2;User=root;Password=Jonathandarth512?;"))
+            using (MySqlConnection connection = new MySqlConnection("specify here"))
             {
                 connection.Open();
 
@@ -130,7 +130,7 @@ namespace restarunttest2
 
         private void button4_Click(object sender, EventArgs e)
         {//commit button 
-            using (MySqlConnection connection = new MySqlConnection("Server=localhost; Port=3306; Database=restrauntdb2;User=root;Password=Jonathandarth512?;"))
+            using (MySqlConnection connection = new MySqlConnection("specify here"))
             {
                 connection.Open();
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM user", connection))
